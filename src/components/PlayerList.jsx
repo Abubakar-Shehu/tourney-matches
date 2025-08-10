@@ -8,12 +8,12 @@ export const PlayerList = (props) => {
   const playerDataArray = preparePlayerData(playerData);
   const parsedPlayerData = addWinsToPlayers(playerDataArray, matchData);
 
-  console.log(parsedPlayerData);
-  
+  const onePlayer = parsedPlayerData[0];
+  console.log(onePlayer);
   return (
     <section className="PlayerList">
       <h1>Current participating players</h1>
-      <Player />
+      <Player firstName={onePlayer.firstName} lastName={onePlayer.lastName} gamerTag={onePlayer.gamerTag} wins={onePlayer.wins}/>
     </section>
   )
 }
