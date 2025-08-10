@@ -1,4 +1,4 @@
-const playerData = {
+export const playerData = {
   "Disguised Lizard": {
     gamerTag: "Disguised Lizard",
     firstName: "Daria ",
@@ -36,5 +36,5 @@ const playerData = {
   }
 };
 
-export default playerData;
+
 // const playerDataArray = Object.values(playerData);
